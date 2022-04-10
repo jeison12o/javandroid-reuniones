@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleReunion"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="7dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="7dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/lblLugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="7dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnVistaFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestion foto"
+        android:layout_marginTop="10dp"
+        android:onClick="vistaGestionFoto"/>
+
+    <Button
+        android:id="@+id/btnVistaVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestion video"
+        android:layout_marginTop="10dp"
+        android:onClick="vistaGestionVideo"/>
+
+    <Button
+        android:id="@+id/btnVistaAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestion audio"
+        android:layout_marginTop="10dp"
+        android:onClick="vistaGestionAudio"/>
+</LinearLayout>

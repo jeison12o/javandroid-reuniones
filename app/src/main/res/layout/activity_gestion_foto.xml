@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestionFotoActivity"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/txtNombreFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingrese el nombre de la foto" />
+
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tomar foto"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="tomarFoto"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listFoto"
+                android:layout_width="match_parent"
+                android:layout_height="594dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

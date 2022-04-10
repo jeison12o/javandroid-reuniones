@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearReunionActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txtNombreReunion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre"
+        android:layout_marginTop="3dp"/>
+
+    <EditText
+        android:id="@+id/txtFechaReunion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Fecha"
+        android:layout_marginTop="3dp"/>
+
+    <EditText
+        android:id="@+id/txtLugarReunion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Lugar"
+        android:layout_marginTop="3dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarReunion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Reunion"
+        android:layout_marginTop="5dp"
+        android:onClick="guardarReunion"/>
+
+    <Button
+        android:id="@+id/btnRegresarGuardarReunion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_marginTop="5dp"
+        android:onClick="vistaRegresar"/>
+</LinearLayout>
